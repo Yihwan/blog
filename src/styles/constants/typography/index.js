@@ -1,0 +1,165 @@
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
+
+import COLORS from '../colors';
+import MEDIA_QUERIES from '../mediaQueries';
+
+const FONT_SIZE = {
+  displaySmall: '2rem',
+  displayLarge: '3rem',
+
+  blogDisplaySmall: '3rem',
+  blogDisplayLarge: '4.5rem',
+
+  headingSmall: '1.25rem',
+  headingLarge: '1.5rem',
+
+  titleSmall: '1.2em',
+  titleLarge: '1.35rem',
+
+  bodySmall: '1rem',
+  bodyLarge: '1rem',
+
+  blogBodySmall: '1.125rem',
+  blogBodyMedium: '1.3rem',
+
+  captionSmall: '0.70rem',
+  captionLarge: '0.80rem',
+
+  blogCaptionSmall: '0.75rem',
+  blogCaptionLarge: '1rem',
+};
+
+const FONT_FAMILY = {
+  monospace: 'Monaco, monospace',
+  system: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
+  serif: 'Charter, Georgia, serif',
+  sansSerif: 'CooperHewitt, sans-serif',
+  cooperHewittHeavyItalic: 'CooperHewittHeavyItalic, sans-serif',
+  cooperHewittBoldItalic: 'CooperHewittBoldItalic, sans-serif',
+  charterItalic: 'CharterItalic, Georgia, serif',
+  charterBoldItalic: 'CharterBoldItalic, Georgia, serif',
+}
+
+const displayStyle = css`
+  font-size: ${FONT_SIZE.displaySmall};
+  font-family: ${FONT_FAMILY.system};
+  color: ${COLORS.terminalWhite};
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  ${MEDIA_QUERIES.mdUp} {
+    font-size: ${FONT_SIZE.displayLarge};
+  }
+`;
+
+const blogDisplayStyle = css`
+  font-size: ${FONT_SIZE.blogDisplaySmall};
+  font-family: ${FONT_FAMILY.cooperHewittHeavyItalic};
+  color: ${COLORS.blogBlack};
+  letter-spacing: .003em;
+
+  ${MEDIA_QUERIES.mdUp} {
+    font-size: ${FONT_SIZE.blogDisplayLarge};
+  }
+`;
+
+const headingStyle = css`
+  font-size: ${FONT_SIZE.headingSmall};
+  line-height: 1.35;
+  font-family: ${FONT_FAMILY.monospace};
+  color: ${COLORS.terminalWhite};
+  font-weight: 600;
+
+  ${MEDIA_QUERIES.mdUp} {
+    font-size: ${FONT_SIZE.headingLarge};
+    line-height: 1.5;
+  }
+`;
+
+const titleStyle = css`
+  font-size: ${FONT_SIZE.titleSmall};
+  font-family: ${FONT_FAMILY.monospace};
+  color: ${COLORS.terminalWhite};
+  line-height: 1.2;
+
+  ${MEDIA_QUERIES.mdUp} {
+    font-size: ${FONT_SIZE.titleLarge};
+    line-height: 1.33;
+  }
+`;
+
+const captionStyle = css`
+  font-size: ${FONT_SIZE.captionSmall};
+  font-family: ${FONT_FAMILY.secondary};
+  color: ${COLORS.terminalWhite};
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+
+  ${MEDIA_QUERIES.mdUp} {
+    font-size: ${FONT_SIZE.captionLarge};
+  }
+`;
+
+const blogCaptionStyle = css`
+  font-size: ${FONT_SIZE.blogCaptionSmall};
+  font-family: ${FONT_FAMILY.charterItalic};
+  color: ${COLORS.blogBlack};
+  letter-spacing: 0.05em;
+
+  ${MEDIA_QUERIES.mdUp} {
+    font-size: ${FONT_SIZE.blogCaptionLarge};
+  }
+`;
+
+const pStyle = css`
+  font-size: ${FONT_SIZE.bodySmall};
+  font-family: ${FONT_FAMILY.monospace};
+  color: ${COLORS.terminalWhite};
+  line-height: 1.5;
+  letter-spacing: .1px;
+  ${MEDIA_QUERIES.mdUp} {
+    font-size: ${FONT_SIZE.bodyLarge};
+  }
+`;
+
+const blogPStyle = css`
+  font-size: ${FONT_SIZE.blogBodySmall};
+  font-family: ${FONT_FAMILY.serif};
+  color: ${COLORS.blogBlack};
+  line-height: 1.5;
+  letter-spacing: .003em;
+
+  ${MEDIA_QUERIES.mdUp} {
+    font-size: ${FONT_SIZE.blogBodyMedium};
+  }
+`;
+
+const Display = styled.h1(displayStyle);
+const BlogDisplay = styled.h1(blogDisplayStyle);
+const Heading = styled.h2(headingStyle);
+const Title = styled.h3(titleStyle);
+const Caption = styled.p(captionStyle);
+const BlogCaption = styled.p(blogCaptionStyle);
+
+export const style = {
+  display: displayStyle,
+  p: pStyle,
+  blogP: blogPStyle,
+  caption: captionStyle,
+  blogCaption: blogCaptionStyle,
+};
+
+const Typography = {
+  FONT_FAMILY,
+  FONT_SIZE,
+  Display,
+  BlogDisplay,
+  Heading,
+  Title,
+  Caption,
+  BlogCaption,
+};
+
+export default Typography;

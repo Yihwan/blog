@@ -22,10 +22,9 @@ exports.createPages = ({ graphql, actions }) => {
   `
 ).then(result => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      if (node.fields.slug === '/') return;
 
       createPage({
-        path: 'blog' + node.fields.slug,
+        path: node.fields.slug,
         component: path.resolve(`./src/templates/blogPost/index.js`),
         context: {
           slug: node.fields.slug,

@@ -18,24 +18,6 @@ import {
 } from './style';
 
 class BlogPostTemplate extends React.Component {
-
-  generateMetaData = () => {
-    const { author, date, something } = this.props.data.markdownRemark.frontmatter;
-    const meta = [['author', author], ['date', date ], ['something', something]];
-
-    return(
-      meta.map(data => {
-        if (!data[1]) return null;
-
-        return(
-          <MetaDataContainer key={data[0]}>
-            <MetaDataKey>{data[0]}</MetaDataKey>
-            <MetaDataValue>{data[1]}</MetaDataValue>
-          </MetaDataContainer>
-        );
-      })
-    );
-  }
   render() {
     const post = this.props.data.markdownRemark;
 
@@ -51,10 +33,6 @@ class BlogPostTemplate extends React.Component {
         </PostHeaderContainer>
 
         <PostBodyContainer>
-          <BodyMetaDataContainer>
-            {this.generateMetaData()}
-          </BodyMetaDataContainer>
-
           <BodyArticleContainer>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </BodyArticleContainer>
@@ -70,7 +48,7 @@ export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
-        blogTitle
+        title
         author
       }
     }

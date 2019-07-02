@@ -1,13 +1,16 @@
 ---
 contentType: 'blog'
 author: 'The Wall Street Journal'
-title: Hong Kong Leader Backs Down on China Law but More Protests Planned
+title: 'Hong Kong Leader Backs Down on China Law but More Protests Planned'
 date: '2019-06-09T19:31:45.924Z'
 headerImageSrc: 'https://images.unsplash.com/photo-1504457047772-27faf1c00561'
 tags: ['featured']
 category: 'travel'
+
 ---
 HONG KONG—Protesters smashed wall-size windows and stormed the city’s legislature on Monday, an unprecedented show of force that ratcheted up the worst social turmoil to rock Hong Kong since it returned to Chinese rule 22 years ago.
+
+<!-- end -->
 
 The mayhem at the government headquarters, which ended in barrages of police tear gas, capped a day in which 550,000 demonstrators marched peacefully through the streets in scorching summer heat, according to organizer estimates.
 

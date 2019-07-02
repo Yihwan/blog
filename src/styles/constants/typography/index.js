@@ -1,33 +1,28 @@
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 
+import BrushStroke1 from 'content/assets/brush-stroke-black-1.png';
+import BrushStroke2 from 'content/assets/brush-stroke-black-2.png';
+import BrushStroke3 from 'content/assets/brush-stroke-black-3.png';
+
 import COLORS from '../colors';
 import MEDIA_QUERIES from '../mediaQueries';
 
 const FONT_SIZE = {
-  displaySmall: '2rem',
-  displayLarge: '3rem',
+  displaySmall: '3rem',
+  displayLarge: '4.5rem',
 
-  blogDisplaySmall: '3rem',
-  blogDisplayLarge: '4.5rem',
+  headingSmall: '2rem',
+  headingLarge: '2.5rem',
 
-  headingSmall: '1.25rem',
-  headingLarge: '1.5rem',
+  titleSmall: '1.3em',
+  titleLarge: '1.5rem',
 
-  titleSmall: '1.2em',
-  titleLarge: '1.35rem',
+  bodySmall: '1.125rem',
+  bodyLarge: '1.25rem',
 
-  bodySmall: '1rem',
-  bodyLarge: '1rem',
-
-  blogBodySmall: '1.125rem',
-  blogBodyMedium: '1.3rem',
-
-  captionSmall: '0.70rem',
-  captionLarge: '0.80rem',
-
-  blogCaptionSmall: '0.75rem',
-  blogCaptionLarge: '1rem',
+  captionSmall: '0.75rem',
+  captionLarge: '1rem',
 };
 
 const FONT_FAMILY = {
@@ -43,33 +38,21 @@ const FONT_FAMILY = {
 
 const displayStyle = css`
   font-size: ${FONT_SIZE.displaySmall};
-  font-family: ${FONT_FAMILY.system};
-  color: ${COLORS.terminalWhite};
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-family: ${FONT_FAMILY.cooperHewittHeavyItalic};
+  color: ${COLORS.blogBlack};
+  letter-spacing: .003em;
 
   ${MEDIA_QUERIES.mdUp} {
     font-size: ${FONT_SIZE.displayLarge};
   }
 `;
 
-const blogDisplayStyle = css`
-  font-size: ${FONT_SIZE.blogDisplaySmall};
-  font-family: ${FONT_FAMILY.cooperHewittHeavyItalic};
-  color: ${COLORS.blogBlack};
-  letter-spacing: .003em;
-
-  ${MEDIA_QUERIES.mdUp} {
-    font-size: ${FONT_SIZE.blogDisplayLarge};
-  }
-`;
-
 const headingStyle = css`
   font-size: ${FONT_SIZE.headingSmall};
   line-height: 1.35;
-  font-family: ${FONT_FAMILY.monospace};
-  color: ${COLORS.terminalWhite};
-  font-weight: 600;
+  letter-spacing: 0.01em;
+  font-family: ${FONT_FAMILY.cooperHewittHeavyItalic};
+  color: ${COLORS.blogBlack};
 
   ${MEDIA_QUERIES.mdUp} {
     font-size: ${FONT_SIZE.headingLarge};
@@ -79,8 +62,7 @@ const headingStyle = css`
 
 const titleStyle = css`
   font-size: ${FONT_SIZE.titleSmall};
-  font-family: ${FONT_FAMILY.monospace};
-  color: ${COLORS.terminalWhite};
+  font-family: ${FONT_FAMILY.cooperHewittBoldItalic};
   line-height: 1.2;
 
   ${MEDIA_QUERIES.mdUp} {
@@ -91,75 +73,64 @@ const titleStyle = css`
 
 const captionStyle = css`
   font-size: ${FONT_SIZE.captionSmall};
-  font-family: ${FONT_FAMILY.secondary};
-  color: ${COLORS.terminalWhite};
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 700;
+  font-family: ${FONT_FAMILY.charterItalic};
+  color: ${COLORS.blogBlack};
+  letter-spacing: 0.05em;
 
   ${MEDIA_QUERIES.mdUp} {
     font-size: ${FONT_SIZE.captionLarge};
   }
 `;
 
-const blogCaptionStyle = css`
-  font-size: ${FONT_SIZE.blogCaptionSmall};
-  font-family: ${FONT_FAMILY.charterItalic};
-  color: ${COLORS.blogBlack};
-  letter-spacing: 0.05em;
-
-  ${MEDIA_QUERIES.mdUp} {
-    font-size: ${FONT_SIZE.blogCaptionLarge};
-  }
-`;
-
-const pStyle = css`
+const bodyStyle = css`
   font-size: ${FONT_SIZE.bodySmall};
-  font-family: ${FONT_FAMILY.monospace};
-  color: ${COLORS.terminalWhite};
-  line-height: 1.5;
-  letter-spacing: .1px;
-  ${MEDIA_QUERIES.mdUp} {
-    font-size: ${FONT_SIZE.bodyLarge};
-  }
-`;
-
-const blogPStyle = css`
-  font-size: ${FONT_SIZE.blogBodySmall};
   font-family: ${FONT_FAMILY.serif};
   color: ${COLORS.blogBlack};
   line-height: 1.5;
   letter-spacing: .003em;
 
   ${MEDIA_QUERIES.mdUp} {
-    font-size: ${FONT_SIZE.blogBodyMedium};
+    font-size: ${FONT_SIZE.bodyLarge};
   }
 `;
 
+
+const brushStrokeStyle = css`
+  background-image: url(${BrushStroke3});
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+
+  padding-top: 15px;
+  margin-top: -15px;
+  padding-bottom: 15px;
+  margin-bottom: -15px;
+
+  padding-left: 125px;
+  margin-left: -125px;
+  padding-right: 25px;
+  margin-right: -25px;
+`;
+
 const Display = styled.h1(displayStyle);
-const BlogDisplay = styled.h1(blogDisplayStyle);
 const Heading = styled.h2(headingStyle);
 const Title = styled.h3(titleStyle);
+const Body = styled.p(bodyStyle);
 const Caption = styled.p(captionStyle);
-const BlogCaption = styled.p(blogCaptionStyle);
 
 export const style = {
-  display: displayStyle,
-  p: pStyle,
-  blogP: blogPStyle,
+  body: bodyStyle,
   caption: captionStyle,
-  blogCaption: blogCaptionStyle,
+  brushStroke: brushStrokeStyle,
 };
 
 const Typography = {
   FONT_FAMILY,
   FONT_SIZE,
   Display,
-  BlogDisplay,
   Heading,
   Title,
+  Body,
   Caption,
-  BlogCaption,
 };
 
 export default Typography;

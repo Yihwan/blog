@@ -2,8 +2,11 @@ import React from 'react';
 
 import injectGlobalStyles from 'src/utils/injectGlobalStyles';
 
+import Header from './header';
+
 import {
   BlogInterfaceContainer,
+  ContentContainer,
 } from './style';
 
 class BlogInterface extends React.Component {
@@ -13,7 +16,10 @@ class BlogInterface extends React.Component {
     return(
       <BlogInterfaceContainer>
         {injectGlobalStyles()}
-        {children}
+        <Header />
+        <ContentContainer>
+          {children}
+        </ContentContainer>
       </BlogInterfaceContainer>
     );
   }

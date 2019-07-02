@@ -3,6 +3,7 @@ const COLORS = {
   darkGrey: '#1B1B1D',
   black: '#000',
   blogBlack: 'rgb(0, 0, 0, .8)',
+  white: '#FFF',
 }
 
 export default COLORS;

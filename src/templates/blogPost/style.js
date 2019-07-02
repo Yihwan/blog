@@ -11,8 +11,8 @@ export const PostHeaderContainer = styled.section`
 
 export const HeaderImageContainer = styled.div`
   background-color: navy;
+  min-height: 70vh;
 
-  min-height: 80vh;
   ${MEDIA_QUERIES.lgUp} {
     min-height: 98vh;
   }
@@ -31,7 +31,7 @@ export const HeaderTitleContainer = styled.div`
   }
 `;
 
-export const HeaderCategory = styled(Typography.BlogCaption)`
+export const HeaderCategory = styled(Typography.Caption)`
   border: 1px solid ${COLORS.blogBlack};
   padding: ${SPACER.xsmall} ${SPACER.base};
   display: inline;
@@ -39,7 +39,7 @@ export const HeaderCategory = styled(Typography.BlogCaption)`
   font-weight: 700;
 `;
 
-export const HeaderTitle = styled(Typography.BlogDisplay)`
+export const HeaderTitle = styled(Typography.Display)`
   margin-top: ${SPACER.xlarge};
   line-height: 1.1;
   color: white;
@@ -57,53 +57,12 @@ export const PostBodyContainer = styled.section`
   position: relative;
 
   ${MEDIA_QUERIES.lgUp} {
-    padding: ${SPACER.x4large} ${SPACER.base};
-    flex-direction: row;
+    padding: ${SPACER.x2large} ${SPACER.base};
   }
-`
-
-export const BodyMetaDataContainer = styled.div`
-  text-align: center;
-  font-size: 14px;
-  display: flex;
-  justify-content: space-around;
-
-
-  div {
-    display: inline;
-  }
-
-  ${MEDIA_QUERIES.lgUp} {
-    position: absolute;
-    text-align: left;
-    flex-direction: column;
-
-    div {
-      display: block;
-    }
-  }
-`;
-
-export const MetaDataContainer = styled.dl`
-  padding: ${SPACER.xsmall} 0;
-  margin: ${SPACER.small} 0;
-`;
-
-export const MetaDataKey = styled.dt`
-  font-family: ${Typography.FONT_FAMILY.cooperHewittBoldItalic};
-  text-transform: uppercase;
-  letter-spacing: .003em;
-  font-size: 0.75rem
-`;
-
-export const MetaDataValue = styled.dd`
-  ${TYPOGRAPHY_STYLE.blogCaption};
-  margin-top: ${SPACER.x2small};
-  letter-spacing: .003em;
 `;
 
 export const BodyArticleContainer = styled.div`
-  ${TYPOGRAPHY_STYLE.blogP};
+  ${TYPOGRAPHY_STYLE.body};
   max-width: 700px;
   margin: 0 auto;
 

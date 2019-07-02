@@ -1,27 +1,34 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 import BlogInterface from 'src/components/blogInterface';
 import SEO from 'src/components/seo';
 
 import {
-  PostPreviewContainer, PreviewHeader, PreviewExcerpt,
+  PostExcerptsIndexContainer, PostExcerpt, Header, ExcerptText,
 } from './_style';
 
 const BlogIndex = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   const posts = edges
     .map(edge => (
-      <PostPreviewContainer>
-        <PreviewHeader>{edge.node.frontmatter.title}</PreviewHeader>
-        <PreviewExcerpt>{edge.node.excerpt}</PreviewExcerpt>
-      </PostPreviewContainer>
+        <PostExcerpt>
+          <Link to={edge.node.fields.slug}>
+            <Header>{edge.node.frontmatter.title}</Header>
+            <ExcerptText>
+              {edge.node.excerpt}
+              [...]
+            </ExcerptText>
+          </Link>
+        </PostExcerpt>
     ));
 
   return(
     <BlogInterface>
       <SEO title="Blog" />
-      {posts}
+      <PostExcerptsIndexContainer>
+        {posts}
+      </PostExcerptsIndexContainer>
     </BlogInterface>
   );
 }
@@ -34,7 +41,10 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 500)
+          excerpt(pruneLength: 10000)
+          fields {
+            slug
+          }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             path

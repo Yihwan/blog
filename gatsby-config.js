@@ -11,12 +11,17 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-remove-trailing-slashes',
     'gatsby-plugin-lodash',
-    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      "resolve": `gatsby-transformer-remark`,
+      "options": {
+        "excerpt_separator": `<!-- end -->`
+      }
+    },
     {
       resolve: 'gatsby-plugin-root-import',
       options: {

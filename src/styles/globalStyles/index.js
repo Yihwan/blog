@@ -48,6 +48,9 @@ export const resetStyles = css`
   	border-collapse: collapse;
   	border-spacing: 0;
   }
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const brandStyles = css`

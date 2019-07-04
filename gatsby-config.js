@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: "Yihwan's Blog",
+    title: "Yihwan Kim",
     description: "Hi, I'm Yihwan. This is my blog.",
     author: `Yihwan Kim`,
   },
@@ -14,8 +14,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       "resolve": `gatsby-transformer-remark`,
       "options": {

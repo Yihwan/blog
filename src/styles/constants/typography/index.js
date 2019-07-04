@@ -7,8 +7,8 @@ import COLORS from '../colors';
 import MEDIA_QUERIES from '../mediaQueries';
 
 const FONT_SIZE = {
-  displaySmall: '3rem',
-  displayLarge: '4.5rem',
+  displaySmall: '2.5rem',
+  displayLarge: '4rem',
 
   headingSmall: '2rem',
   headingLarge: '2.5rem',
@@ -95,26 +95,23 @@ const bodyStyle = css`
 
 const brushStrokeStyle = css`
   background-image: url(${BrushStroke});
-  color: ${COLORS.white};
+  color: ${COLORS.blogBlack};
+  opacity: 0.84;
   background-repeat: no-repeat;
   background-size: 100% 95%;
 
-  padding-top: 15px;
-  margin-top: -15px;
-  padding-bottom: 8px;
-  margin-bottom: -8px;
-
-  padding-left: 125px;
-  margin-left: -125px;
-  padding-right: 25px;
-  margin-right: -25px;
-
-  animation: drawBrushStroke 0.25s;
+  animation: drawBrushStroke 1s;
   animation-fill-mode: forwards;
 
   @keyframes drawBrushStroke {
-  	from { clip-path: inset(0 100% 0 0); }
-  	to { clip-path: inset(0 0 0 0); }
+  	from {
+      color: ${COLORS.blogBlack};
+      clip-path: inset(0 100% 0 0);
+    }
+  	to {
+      color: ${COLORS.white};
+      clip-path: inset(0 0 0 0);
+    }
   }
 `;
 
@@ -125,6 +122,7 @@ const Body = styled.p(bodyStyle);
 const Caption = styled.p(captionStyle);
 
 export const style = {
+  heading: headingStyle,
   body: bodyStyle,
   caption: captionStyle,
   brushStroke: brushStrokeStyle,

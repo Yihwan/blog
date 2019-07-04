@@ -6,20 +6,31 @@ export const PostExcerpt = styled.article`
   max-width: 700px;
 
   ${MEDIA_QUERIES.xlUp} {
-    > a:hover {
-      > h2 {
+    &:hover {
+      div {
         ${TYPOGRAPHY_STYLE.brushStroke};
+        padding-top: 20px;
+        margin-top: -20px;
+        padding-bottom: 15px;
+        margin-bottom: -15px;
+
+        padding-left: 75px;
+        margin-left: -75px;
+        padding-right: 75px;
+        margin-right: -75px;
       }
     }
   }
 `;
 
-export const Header = styled(Typography.Heading)`
+export const Header = styled.div`
+  ${TYPOGRAPHY_STYLE.heading};
+  display: inline-block;
 
 `;
 
 export const ExcerptText = styled(Typography.Body)`
-  padding: ${SPACER.base} 0;
+  padding: ${SPACER.large} 0;
 `;
 
 export const PostExcerptsIndexContainer = styled.section`

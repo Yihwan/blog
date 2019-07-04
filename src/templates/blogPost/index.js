@@ -10,10 +10,6 @@ import {
   HeaderCategory,
   HeaderTitle,
   PostBodyContainer,
-  BodyMetaDataContainer,
-  MetaDataContainer,
-  MetaDataKey,
-  MetaDataValue,
   BodyArticleContainer,
 } from './style';
 

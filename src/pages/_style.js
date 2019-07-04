@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Typography, TYPOGRAPHY_STYLE, SPACER, COLORS, MEDIA_QUERIES } from 'src/styles/constants';
+import { Typography, TYPOGRAPHY_STYLE, SPACER, MEDIA_QUERIES } from 'src/styles/constants';
 
 export const PostExcerpt = styled.article`
   margin: ${SPACER.large} 0;
@@ -9,7 +9,6 @@ export const PostExcerpt = styled.article`
     > a:hover {
       > h2 {
         ${TYPOGRAPHY_STYLE.brushStroke};
-        color: white;
       }
     }
   }

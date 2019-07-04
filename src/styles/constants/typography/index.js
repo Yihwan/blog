@@ -1,9 +1,7 @@
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 
-import BrushStroke1 from 'content/assets/brush-stroke-black-1.png';
-import BrushStroke2 from 'content/assets/brush-stroke-black-2.png';
-import BrushStroke3 from 'content/assets/brush-stroke-black-3.png';
+import BrushStroke from 'content/assets/brush-stroke-black.png';
 
 import COLORS from '../colors';
 import MEDIA_QUERIES from '../mediaQueries';
@@ -96,19 +94,28 @@ const bodyStyle = css`
 
 
 const brushStrokeStyle = css`
-  background-image: url(${BrushStroke3});
+  background-image: url(${BrushStroke});
+  color: ${COLORS.white};
   background-repeat: no-repeat;
   background-size: 100% 95%;
 
   padding-top: 15px;
   margin-top: -15px;
-  padding-bottom: 15px;
-  margin-bottom: -15px;
+  padding-bottom: 8px;
+  margin-bottom: -8px;
 
   padding-left: 125px;
   margin-left: -125px;
   padding-right: 25px;
   margin-right: -25px;
+
+  animation: drawBrushStroke 0.25s;
+  animation-fill-mode: forwards;
+
+  @keyframes drawBrushStroke {
+  	from { clip-path: inset(0 100% 0 0); }
+  	to { clip-path: inset(0 0 0 0); }
+  }
 `;
 
 const Display = styled.h1(displayStyle);

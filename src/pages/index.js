@@ -41,13 +41,12 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 10000)
+          excerpt(pruneLength: 1000)
           fields {
             slug
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
-            path
             title
           }
         }

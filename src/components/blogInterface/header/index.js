@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import {
   BlogHeaderContainer,
   Greeting,
-  WaveContainer,
   Intro,
   Nav,
 } from './style';

@@ -1,7 +1,5 @@
 import styled from '@emotion/styled';
-import {
-  COLORS, Typography, MEDIA_QUERIES, BREAKPOINTS, SPACER,
-} from 'src/styles/constants';
+import { MEDIA_QUERIES } from 'src/styles/constants';
 
 export const BlogInterfaceContainer = styled.main`
   display: flex;

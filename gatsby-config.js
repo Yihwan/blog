@@ -13,7 +13,6 @@ module.exports = {
     'gatsby-plugin-lodash',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-transition-link`,
     {
       "resolve": `gatsby-transformer-remark`,
       "options": {

@@ -13,15 +13,6 @@ export const PostHeaderContainer = styled.section`
   }
 `
 
-export const HeaderImageContainer = styled.div`
-  background-color: navy;
-  min-height: 65vh;
-
-  ${MEDIA_QUERIES.lgUp} {
-    min-height: 98vh;
-  }
-`;
-
 export const HeaderTitleContainer = styled.div`
   padding: 0 ${SPACER.base};
   text-align: center;
@@ -68,12 +59,13 @@ export const HeaderTitleWithBrushStroke = styled(Typography.Display)`
   margin-left: auto;
   margin-right: auto;
 `
-
+// TODO-YK: Investigate better way to style resets.
 export const PostBodyContainer = styled.section`
   display: flex;
   flex-direction: column;
   max-width: 1340px;
   margin: 0 auto;
+  margin-bottom: ${SPACER.x2large};
   padding: ${SPACER.large} ${SPACER.base};
   position: relative;
 
@@ -92,16 +84,49 @@ export const PostBodyContainer = styled.section`
     font-weight: 700;
   }
   .emphasis:first-letter {
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: 700;
-    line-height: 1;
-    margin-right: 0.1em;
+    margin-right: 0.01em;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: 900;
+  }
+
+  .footnotes {
+    margin-top: ${SPACER.x3large};
+
+    a {
+      color: ${COLORS.blogBlack};
+    }
+    
+    li {
+      margin: ${SPACER.base} 0;
+    }
+
+    p {
+      display: inline;
+    }
+
+    .footnote-backref {
+      color: ${COLORS.blogBlack};
+    }
+  }
+
+
+  sup > a {
+    color: ${COLORS.blogBlack};
+    font-size: 0.75em;
   }
 `;
 
 export const BodyArticleContainer = styled.div`
   ${TYPOGRAPHY_STYLE.body};
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
 
   margin-top: ${SPACER.base};
@@ -110,12 +135,13 @@ export const BodyArticleContainer = styled.div`
     margin-top: 0;
   }
 
-  p:not(:first-of-type) {
-    margin-top: 21px;
+  p {
+    margin-bottom: ${SPACER.base};
+  }
 
-    ${MEDIA_QUERIES.lgUp} {
-      margin-top: 28px;
+  ${MEDIA_QUERIES.mdUp} {
+    p {
+      margin-bottom: 20px;
     }
-
   }
 `;

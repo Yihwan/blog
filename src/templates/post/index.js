@@ -6,9 +6,7 @@ import BlogInterfaceContainer from 'src/components/blogInterface';
 
 import {
   PostHeaderContainer,
-  HeaderImageContainer,
   HeaderTitleContainer,
-  HeaderCategory,
   HeaderTitle,
   HeaderTitleWithBrushStroke,
   PostBodyContainer,
@@ -23,7 +21,12 @@ class PostTemplate extends React.Component {
     return(
       <BlogInterfaceContainer>
         <PostHeaderContainer hasHeaderImage={hasHeaderImage}>
-          {hasHeaderImage && <Img style={{position: 'static'}} imgStyle={{objectFit: 'cover'}} sizes={post.frontmatter.featuredImageSrc.childImageSharp.fluid} />}
+          {hasHeaderImage && (
+            <Img
+              style={{position: 'static'}}
+              imgStyle={{objectFit: 'cover'}}
+              sizes={post.frontmatter.featuredImageSrc.childImageSharp.fluid}
+            />)}
 
           <HeaderTitleContainer>
             {hasHeaderImage
@@ -60,14 +63,10 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
       html
       frontmatter {
         title
         author
-        date(formatString: "D MMMM YYYY")
-        tags
-        category
         featuredImageSrc {
           childImageSharp{
             fluid(maxWidth: 4000) {

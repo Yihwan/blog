@@ -96,21 +96,23 @@ const bodyStyle = css`
 const brushStrokeStyle = css`
   background-image: url(${BrushStroke});
   color: ${COLORS.blogBlack};
-  opacity: 0.84;
+  opacity: 0;
   background-repeat: no-repeat;
   background-size: 100% 95%;
 
-  animation: drawBrushStroke 1s;
+  animation: drawBrushStroke 0.75s;
   animation-fill-mode: forwards;
 
   @keyframes drawBrushStroke {
   	from {
       color: ${COLORS.blogBlack};
-      clip-path: inset(0 100% 0 0);
+      clip-path: inset(0 118% 0 0);
+      opacity: 0;
     }
   	to {
       color: ${COLORS.white};
       clip-path: inset(0 0 0 0);
+      opacity: 0.84;
     }
   }
 `;

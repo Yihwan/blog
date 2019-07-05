@@ -1,25 +1,33 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql} from 'gatsby';
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import BlogInterface from 'src/components/blogInterface';
 import SEO from 'src/components/seo';
 
 import {
-  PostExcerptsIndexContainer, PostExcerpt, Header, ExcerptText,
+  PostExcerptsIndexContainer, PostExcerpt, Header, ExcerptText, ReadMore,
 } from './_style';
+
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
 
 const BlogIndex = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   const posts = edges
     .map(edge => (
-        <PostExcerpt>
-          <Link to={edge.node.fields.slug}>
-            <Header>{edge.node.frontmatter.title}</Header>
-            <ExcerptText>
-              {edge.node.excerpt}
-              [...]
-            </ExcerptText>
-          </Link>
+        <PostExcerpt key={edge.node.fields.slug}>
+          <Header>
+            <AniLink cover bg="#292929" duration={0.75} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</AniLink>
+          </Header>
+          <ExcerptText>
+            <section dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
+          </ExcerptText>
+          <ReadMore>
+            <AniLink cover bg="#292929" duration={0.75} to={edge.node.fields.slug}>—Read More—</AniLink>
+          </ReadMore>
         </PostExcerpt>
     ));
 
@@ -41,12 +49,11 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 1000)
+          excerpt(format: HTML)
           fields {
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
           }
         }

@@ -1,5 +1,5 @@
 import React from 'react';
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { Link } from 'gatsby';
 
 import {
   BlogHeaderContainer,
@@ -17,7 +17,7 @@ const Header = () => (
       I'm a software engineer who occasionally writes about travel, coding, and other things.
     </Intro>
     <Nav>
-      <AniLink fade to='/'>Home</AniLink>
+      <Link to='/'>Home</Link>
       <a href="https://yihwan.kim" target="_blank" rel="noopener noreferrer">About</a>
     </Nav>
   </BlogHeaderContainer>

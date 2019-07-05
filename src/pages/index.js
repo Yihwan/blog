@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 
-import BlogInterface from 'src/components/blogInterface';
 import SEO from 'src/components/seo';
+import Layout from 'src/layouts';
 
 import {
   PostExcerptsIndexContainer, PostExcerpt, Header, ExcerptText, ReadMore,
@@ -31,7 +31,7 @@ const BlogIndex = ({ data }) => {
     ));
 
   return(
-    <BlogInterface>
+    <Layout>
       <SEO
         title="Blog | Yihwan Kim"
         description="Hi, I'm Yihwan. I'm a software engineer who occasionally writes about travel, coding, and other things."
@@ -39,7 +39,7 @@ const BlogIndex = ({ data }) => {
       <PostExcerptsIndexContainer>
         {posts}
       </PostExcerptsIndexContainer>
-    </BlogInterface>
+    </Layout>
   );
 }
 

@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import SEO from 'src/components/seo';
-import BlogInterfaceContainer from 'src/components/blogInterface';
+import Layout from 'src/layouts';
 
 import {
   PostHeaderContainer,
@@ -20,7 +20,7 @@ class PostTemplate extends React.Component {
     const hasHeaderImage = !!post.frontmatter.featuredImageSrc;
 
     return(
-      <BlogInterfaceContainer>
+      <Layout>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -51,7 +51,7 @@ class PostTemplate extends React.Component {
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </BodyArticleContainer>
         </PostBodyContainer>
-      </BlogInterfaceContainer>
+      </Layout>
     );
   }
 }

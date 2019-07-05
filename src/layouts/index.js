@@ -2,14 +2,14 @@ import React from 'react';
 
 import injectGlobalStyles from 'src/utils/injectGlobalStyles';
 
-import Header from './header';
+import Header from 'src/components/header';
 
 import {
   BlogInterfaceContainer,
   ContentContainer,
 } from './style';
 
-class BlogInterface extends React.Component {
+class Layout extends React.Component {
   render() {
     const { children } = this.props;
 
@@ -25,5 +25,4 @@ class BlogInterface extends React.Component {
   }
 }
 
-
-export default BlogInterface;
+export default Layout;

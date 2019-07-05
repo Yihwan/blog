@@ -1,8 +1,8 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import SEO from 'src/components/seo';
-import Layout from 'src/layouts';
 
 import {
   PostExcerptsIndexContainer, PostExcerpt, Header, ExcerptText, ReadMore,
@@ -19,19 +19,19 @@ const BlogIndex = ({ data }) => {
     .map(edge => (
         <PostExcerpt key={edge.node.fields.slug}>
           <Header>
-            <Link to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
+            <AniLink cover bg="#292929" duration={0.75} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</AniLink>
           </Header>
           <ExcerptText>
             <section dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
           </ExcerptText>
           <ReadMore>
-            <Link to={edge.node.fields.slug}>—Read More—</Link>
+            <AniLink cover bg="#292929" duration={0.75} to={edge.node.fields.slug}>—Read More—</AniLink>
           </ReadMore>
         </PostExcerpt>
     ));
 
   return(
-    <Layout>
+    <React.Fragment>
       <SEO
         title="Blog"
         description="Hi, I'm Yihwan. I'm a software engineer who occasionally writes about travel, coding, and other things."
@@ -39,7 +39,7 @@ const BlogIndex = ({ data }) => {
       <PostExcerptsIndexContainer>
         {posts}
       </PostExcerptsIndexContainer>
-    </Layout>
+    </React.Fragment>
   );
 }
 

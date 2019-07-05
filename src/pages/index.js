@@ -1,6 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { graphql, Link } from 'gatsby';
 
 import SEO from 'src/components/seo';
 
@@ -19,13 +18,13 @@ const BlogIndex = ({ data }) => {
     .map(edge => (
         <PostExcerpt key={edge.node.fields.slug}>
           <Header>
-            <AniLink cover bg="#292929" duration={0.75} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</AniLink>
+            <Link to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
           </Header>
           <ExcerptText>
             <section dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
           </ExcerptText>
           <ReadMore>
-            <AniLink cover bg="#292929" duration={0.75} to={edge.node.fields.slug}>—Read More—</AniLink>
+            <Link to={edge.node.fields.slug}>—Read More—</Link>
           </ReadMore>
         </PostExcerpt>
     ));

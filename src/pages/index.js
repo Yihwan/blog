@@ -33,7 +33,7 @@ const BlogIndex = ({ data }) => {
   return(
     <Layout>
       <SEO
-        title="Blog | Yihwan Kim"
+        title="Blog"
         description="Hi, I'm Yihwan. I'm a software engineer who occasionally writes about travel, coding, and other things."
       />
       <PostExcerptsIndexContainer>

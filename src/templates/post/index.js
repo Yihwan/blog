@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
+import SEO from 'src/components/seo';
 import BlogInterfaceContainer from 'src/components/blogInterface';
 
 import {
@@ -20,6 +21,10 @@ class PostTemplate extends React.Component {
 
     return(
       <BlogInterfaceContainer>
+        <SEO
+          title={post.frontmatter.title}
+          description={post.frontmatter.description || post.excerpt}
+        />
         <PostHeaderContainer hasHeaderImage={hasHeaderImage}>
           {hasHeaderImage && (
             <Img
@@ -64,6 +69,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
+      excerpt
       frontmatter {
         title
         author

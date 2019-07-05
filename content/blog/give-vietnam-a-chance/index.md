@@ -24,7 +24,7 @@ The cities are grimy. Trash piles up in the gutters and overflows onto the river
 
 It’s chaotic. The ankle-level guardrails sprinkled around the occasional street corner fail to achieve their intended purpose (keeping motorbikes off the sidewalk) and only succeed in tripping hapless tourists wandering by.
 
-It's loud—an entirely different kind of loud from the relatively orderly bustle of New York or Hong Kong. The narrow streets and alleys reverberate with ear-piercing honks and droning motors. The booming voices over loudspeakers—whether communist propaganda or motorbike vendor selling his wares, I’m not sure.
+It's loud—an entirely different kind of loud from the relatively orderly bustle of New York or Hong Kong. The narrow streets and alleys reverberate with ear-piercing honks and droning motors. The booming voices over loudspeakers—whether communist propaganda or motorbike vendor, I’m not sure.
 
 It's also true that many Vietnamese don’t immediately come off as beacons of warmth and positivity.
 

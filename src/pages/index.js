@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 
 import SEO from 'src/components/seo';
-import Layout from 'src/layouts';
 
 import {
   PostExcerptsIndexContainer, PostExcerpt, Header, ExcerptText, ReadMore,
@@ -31,7 +30,7 @@ const BlogIndex = ({ data }) => {
     ));
 
   return(
-    <Layout>
+    <React.Fragment>
       <SEO
         title="Blog"
         description="Hi, I'm Yihwan. I'm a software engineer who occasionally writes about travel, coding, and other things."
@@ -39,7 +38,7 @@ const BlogIndex = ({ data }) => {
       <PostExcerptsIndexContainer>
         {posts}
       </PostExcerptsIndexContainer>
-    </Layout>
+    </React.Fragment>
   );
 }
 

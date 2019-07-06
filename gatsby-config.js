@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: "Yihwan Kim",
-    description: "Hi, I'm Yihwan. This is my blog.",
+    description: "Hi, I'm Yihwan. I'm a software engineer who occasionally writes about travel, coding, and other things.",
     author: `Yihwan Kim`,
   },
   plugins: [
@@ -13,6 +13,7 @@ module.exports = {
     'gatsby-plugin-lodash',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-layout`,
     {
       "resolve": `gatsby-transformer-remark`,
       "options": {

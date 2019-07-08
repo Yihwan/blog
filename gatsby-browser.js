@@ -1,6 +1,3 @@
-const React = require("react");
-const Layout = require("./src/layouts").default;
-
 export const onClientEntry = () => {
   // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
   if (typeof window.IntersectionObserver === `undefined`) {

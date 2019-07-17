@@ -31,7 +31,6 @@ const FONT_FAMILY = {
   cooperHewittHeavyItalic: 'CooperHewittHeavyItalic, sans-serif',
   cooperHewittBoldItalic: 'CooperHewittBoldItalic, sans-serif',
   charterItalic: 'CharterItalic, Georgia, serif',
-  charterBoldItalic: 'CharterBoldItalic, Georgia, serif',
 }
 
 const displayStyle = css`

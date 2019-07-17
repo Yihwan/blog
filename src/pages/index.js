@@ -14,17 +14,18 @@ if (typeof window !== "undefined") {
 
 const BlogIndex = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
+
   const posts = edges
     .map(edge => (
         <PostExcerpt key={edge.node.fields.slug}>
           <Header>
-            <Link to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
+            <Link to={edge.node.fields.slug.replace(/\/$/, "")}>{edge.node.frontmatter.title}</Link>
           </Header>
           <ExcerptText>
             <section dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
           </ExcerptText>
           <ReadMore>
-            <Link to={edge.node.fields.slug}>—Read More—</Link>
+            <Link to={edge.node.fields.slug.replace(/\/$/, "")}>—Read More—</Link>
           </ReadMore>
         </PostExcerpt>
     ));

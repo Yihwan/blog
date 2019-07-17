@@ -10,29 +10,29 @@ featuredImageSrc: './featured-image-test.jpeg'
   Vietnam is a marmite country—you either love it, or you hate it. <br/> —Someone on Reddit
 </blockquote>
 
-<span class="emphasis">As a travel destination,</span> Vietnam is apparently divisive. This caught me by surprise, as I'd only heard rave reviews from close friends and travel heads alike.
+<span class="emphasis">As a travel destination,</span> Vietnam is apparently divisive. This caught me by surprise, as I'd only heard rave reviews from close friends and travel heads.
 
 You’ve probably heard the stories too. Steaming soups with mystery bits, best enjoyed from low plastic stools. Ice-cold beers dripping with condensation, for less than a dollar apiece. The intoxicating fumes of motorbike exhaust mixing with herbs, spices, and—oh, is that durian? Paradise on earth, according to them—this is Vietnam.
 
-But after just one night in Saigon, I'd already become disillusioned with these stories.
+But after just one night in Saigon, I'd already become disillusioned with it all.
 
 <!-- end -->
 
-For one, the country’s simply not built for tourists like other major cities in the region. A functioning metro system is nowhere to be found. Construction has been well underway in both Hanoi and Saigon for decades now, with the first line of the Ho Chi Minh City Metro scheduled to open in 2013. It didn't, and as of writing, it still hasn’t.
+For one, the country’s simply not built for tourists like other major cities in the region. A functioning metro system is nowhere to be found. Construction has been well underway in both Hanoi and Saigon for decades now, with no end in sight.
 
-The cities are grimy. Trash piles up in the gutters and overflows onto the riverbanks. Stray dogs, the kind that wouldn’t play nice with the well-coiffed, fit-in-a-Fendi crowd, roam the streets for scraps and shelter.
+The cities are grimy. Trash piles up in the gutters and overflows onto the riverbanks. Stray dogs, ones that wouldn’t play nice with the well-coiffed, fit-in-a-Fendi crowd, roam the streets for scraps and shelter.
 
-It’s chaotic. The ankle-level guardrails sprinkled around the occasional street corner fail to achieve their intended purpose (keeping motorbikes off the sidewalk) and only succeed in tripping hapless tourists wandering by.
+It’s chaotic. The ankle-level guardrails sprinkled around occasional street corners fail to achieve their intended purpose (keeping motorbikes off the sidewalk) and only succeed in tripping hapless tourists wandering by.
 
-It's loud—an entirely different kind of loud from the relatively orderly bustle of New York or Hong Kong. The narrow streets and alleys reverberate with ear-piercing honks and droning motors. The booming voices over loudspeakers—whether communist propaganda or motorbike vendor, I’m not sure.
+It's loud, an entirely different kind of loud from the relatively orderly bustle of New York or Hong Kong. The narrow streets and alleys constantly reverberate with ear-piercing honks and droning motors. As for the booming voices over loudspeakers—whether communist propaganda or motorbike vendor, I’m not sure.
 
 It's also true that many Vietnamese don’t immediately come off as beacons of warmth and positivity.
 
-Shopkeepers greeted me with suspicious glances. I was ignored by street vendors or shooed away with a terse "Sold out!" Even at ostensibly foreigner-friendly establishments like The Deck or the Pasteur Brewing Taproom in Saigon, service was hit or miss. Let the sordid hordes of Yelp-elite descend and feast.
+Shopkeepers greeted me with suspicious glances. I was ignored by street vendors or shooed away with a terse "Sold out!" Even at ostensibly foreigner-friendly establishments, service was hit or miss.
 
-<span class="emphasis">Vietnam just wasn’t clicking for me</span> like so many other countries had. Did that make me persona non grata? Was this country not meant for me?
+<span class="emphasis">Vietnam just wasn’t clicking for me</span> like so many other countries had. Did that mean this country just wasn't meant for me?
 
-Barricaded inside my fourth floor walk-up in the heart of chaos, I aimlessly clicked around the Internet to see if anyone shared my misgivings. I discovered I wasn’t alone.
+Barricaded inside a fourth floor walk-up in the heart of chaos, I aimlessly clicked around the Internet to see if anyone shared my misgivings. That's when I discovered I wasn’t alone.
 
 An entire cohort of travel-blogger-types very publicly aired their grievances against Vietnam. Titles ranged from the somewhat-pensive "Vietnam: Why I'll Never Return" to the Comically Capitalized and shamelessly click-baity "10 Harsh but True Things about Vietnam that you WISH you had known."
 
@@ -40,21 +40,21 @@ These sentiments echoed across message boards everywhere. It's utter mayhem, one
 
 Dirty, smelly, crowded—I don't know why I ever came, I hate it here, and I can't wait to get out. <em>*This*</em> is Vietnam.
 
-Disgruntled online voices aside, a study conducted by the non-profit Pacific Asia Travel Association found that out of the tens of millions of tourists to Vietnam every year, only 6% will ever return. That's compared to 60-70% for nearby Thailand, and a comparable 60% for the autocratic utopia that is Singapore.[^1]
+Disgruntled online voices aside, a study conducted by the non-profit Pacific Asia Travel Association found that out of the tens of millions of tourists to Vietnam every year, only 6% ever return. That's compared to 60-70% for nearby Thailand, and a comparable 60% for Singapore.[^1]
 
 [^1]:[1] <em>Foreign tourists keep flocking to Vietnam, but whether they come back is another story</em>, <a target="_blank" href="https://e.vnexpress.net/projects/foreign-tourists-keep-flocking-to-vietnam-but-whether-they-come-back-is-another-story-3636728/index.html" rel="noopener noreferrer">VN Express</a>.
 
 There seems to be a consensus. But why?
 
-<span class="emphasis">Why are Vietnamese people so mean?</span> Why can’t things be more tidy? Why does it smell bad? How come traveling is so much easier in other Southeast Asian countries? Why bother coming here at all?
+<span class="emphasis">Why are Vietnamese people so mean?</span> Why can’t things be more tidy? Why does it smell bad? Why bother coming here at all?
 
-To learn how we arrived at the present, it might be helpful to turn a few pages back. Unfortunately in this story, those pages lead to war. Many, many wars.
+To learn how we arrived at the present, it's often helpful to turn a few pages back. Unfortunately in this story, those pages lead to war. Many, many wars.
 
 Just one generation ago, Vietnam was bombed to pieces. More than 7 million tons of ordnance, nearly 4 times the amount dropped during all of World War II, devastated millions in the cities and countryside.
 
-Chemical defoliants—one for nearly every color of the rainbow, but most notoriously Agent Orange—caused unimaginable genetic defects for anyone caught in the toxic shower. Babies born without limbs, blind, deaf, faceless, with two heads on one body, two bodies to a head, disfigurements and cancers that are borne by survivors to this day.
+Chemical defoliants—one for nearly every color of the rainbow, but most notoriously Agent Orange—caused unimaginable genetic defects for anyone caught in the toxic shower. Babies were born without limbs or faces, blind, deaf, with two heads on one body, two bodies to a head, disfigurements and cancers. The scars are borne by survivors to this day.
 
-Hundreds of thousands of tons of napalm bombs exploded over militants and civilians alike, splattering a slimy, highly flammable petrochemical that stuck fire to eyes, ears, and skin. Flames became glued to clothing, trapping victims in an inferno so intense they desperately shed to bare skin for relief. That’s what happened to Kim Phuc. You may know her as the napalm girl.
+Hundreds of thousands of tons of napalm bombs exploded over militants and civilians alike, splattering a slimy, highly flammable petrochemical that stuck fire to eyes, ears, and skin. The flames became glued to clothing, trapping victims in an inferno so intense they desperately shed to bare skin for relief. That’s what happened to Kim Phuc. You may know her as the napalm girl.
 
 And this was just during the American War.
 
@@ -62,11 +62,11 @@ In the past century alone, Vietnam has been invaded by the French, the Japanese,
 
 After the Americans were long gone, the communists continued their genocidal purge. Those lucky enough to escape execution were put into “re-education camps" for just a few days, a month at the most, they were told. For some, that meant imprisonment until 1986—17 years after they arrived.
 
-<span class="emphasis">So what do you expect?</span> A country only just emerged from the trenches of war to brush themselves off, get over it, and welcome you with open arms?
+<span class="emphasis">So what do you expect?</span> A country—only just emerged from the trenches of war—to brush themselves off, get over it, and welcome you with open arms?
 
 Incredibly, Vietnam seems to have done just that.
 
-While the war is hardly forgotten as it is for most Americans today, the Vietnamese have largely moved on. So the brusque nature you encounter on the streets isn't for resentment of war per se. It's more that many Vietnamese, and the country as a whole, are still shaking off the wars' lingering residual effects: poverty, loss, and a slow road to recovery.
+While the war is hardly forgotten as it is for most Americans today, the Vietnamese have largely moved on. So the brusque nature you encounter on the streets isn't out of resentment of war per se. It's more that many Vietnamese, and the country as a whole, are still shaking off the wars' lingering residual effects: poverty, loss, and a slow road to recovery.
 
 Life can be hard, and when you're struggling to survive on the streets of Hanoi, exchanging pleasantries with rich foreigners is hardly top of mind.
 
@@ -80,7 +80,7 @@ Being overcharged left and right? When I handed a bánh xèo vendor ₫20,000 (~
 
 She was reaching for the empty plastic cup clutched in my other hand, which she tossed in a nearby rubbish bin with a friendly chuckle.
 
-In fact, in only two out of several dozen encounters with food vendors do I think, maybe—just maybe—I <em>*might*</em> have paid slightly above market price. What's tragic isn't that it happened (or rather, might have happened), but that I gave it even a second thought.
+In fact, in only two out of several dozen food vendor encounters do I think, maybe—just maybe—I <em>*might*</em> have paid slightly above market price. What's tragic isn't that it happened (or rather, might have happened), but that I gave it even a second thought.
 
 The difference between expected and actual costs for both instances came out to about ₫40,000. That's the equivalent of a dollar seventy. A dollar. And seventy cents.
 
@@ -94,7 +94,7 @@ Yes, I was indeed a fool, but a fool of my own making.
 
 When I finally put Internet hearsay and personal prejudice aside, the country embraced me for it.
 
-I met the bánh canh cua lady, who serves up steaming bowls of thick crab noodle soup from a stand half the size of a typical dirty—water hot dog cart. As she deftly placed each ingredient—thick, udon-like noodles, shrimp, crab meat, scallions, and more—in a precariously thin plastic bowl for takeaway, her long metal cooking spoon paused when it reached the bright red bird's eye chili paste.
+I found the bánh canh cua lady in a cramped alley in Saigon. As she deftly placed each ingredient—thick, udon-like noodles, shrimp, crab meat, scallions, and more—in a precariously thin plastic bowl for takeaway, her long metal cooking spoon paused when it reached the bright red bird's eye chili paste.
 
 She looked up, her eyes simultaneously unsure and subtlety daring. "Yes, please!" I replied, nodding enthusiastically. This seemed to please her. She continued her ritual craft, but soon paused once again on a giant slab of blood cake, bubbling in a frothy orange bath adjacent her cart. Once again, I smiled and nodded, which only elevated the mood.
 
@@ -102,11 +102,9 @@ We didn't have much time together after that—just enough for her to pour boili
 
 [^2]:[2] You can meet the bánh canh cua lady in the food alley near 76 Hai Bà Trưng, Bến Nghé in Saigon. Say hello, and don't forego the chilis and blood cake.
 
-I could fill a book with experiences like these, my own experiences of Vietnam. As time marches on, I can only hope these stories, and many more like them, move us even further beyond the chapters of war.
-
 Vietnam strikes me as a place you learn to love. Visiting requires some preparation: mental, logistical, and—according to my travel nurse—physical.
 
-<span class="emphasis">The key to discovering Vietnam's beauty</span> is powering through the chaotic introduction and not giving up on its rougher edges. It's a process you only have so much control over.
+<span class="emphasis">So the key to discovering Vietnam's beauty</span> is powering through the chaotic introduction and not giving up on its rougher edges. It's a process you only have so much control over.
 
 But that's not to say you can't hurry that process along.
 
@@ -146,6 +144,6 @@ I must have had an incredulous look on my face, because she followed-up with:
 
 I dutifully guarded that exit door for the next hour and a half. I'm almost sorry to report that no one attempted to open it.
 
-<span class="emphasis">Give it a shot.</span> As with all things in life, you might like the country, the food, the whatever—or you might not. Just make that experience your own, not stained by the accounts of others. And with Vietnam, reach a little further, far outside your comfort zone, before calling it a wrap.
+<span class="emphasis">Give it a shot.</span> As with all things in life, you might like the country, the food, the whatever—or you might not. Just make that experience your own, not colored by the accounts of others. And with Vietnam, reach a little further, far outside your comfort zone, before calling it a wrap.
 
-For me, the more I opened up to the country—the more it opened up for me. I bet it will for you too.
+The more I opened up to Vietnam—the more it opened up for me. I bet it will for you too.

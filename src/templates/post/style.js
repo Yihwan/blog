@@ -82,6 +82,7 @@ export const PostBodyContainer = styled.section`
   .emphasis {
     display: inline-block;
     font-weight: 700;
+    line-height: 1; 
   }
   .emphasis:first-letter {
     font-size: 1.5em;
@@ -126,7 +127,7 @@ export const PostBodyContainer = styled.section`
 
 export const BodyArticleContainer = styled.div`
   ${TYPOGRAPHY_STYLE.body};
-  max-width: 600px;
+  max-width: 680px;
   margin: 0 auto;
 
   margin-top: ${SPACER.base};
@@ -136,12 +137,12 @@ export const BodyArticleContainer = styled.div`
   }
 
   p {
-    margin-bottom: ${SPACER.base};
+    margin-bottom: ${SPACER.large};
   }
 
   ${MEDIA_QUERIES.mdUp} {
     p {
-      margin-bottom: 20px;
+      margin-bottom: ${SPACER.xlarge};
     }
   }
 `;

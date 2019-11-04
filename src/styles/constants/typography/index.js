@@ -16,8 +16,8 @@ const FONT_SIZE = {
   titleSmall: '1.3em',
   titleLarge: '1.5rem',
 
-  bodySmall: '1.125rem',
-  bodyLarge: '1.25rem',
+  bodySmall: '1rem',
+  bodyLarge: '1.125rem',
 
   captionSmall: '0.75rem',
   captionLarge: '1rem',
@@ -83,7 +83,7 @@ const bodyStyle = css`
   font-size: ${FONT_SIZE.bodySmall};
   font-family: ${FONT_FAMILY.serif};
   color: ${COLORS.blogBlack};
-  line-height: 1.5;
+  line-height: 1.58;
   letter-spacing: .003em;
 
   ${MEDIA_QUERIES.mdUp} {

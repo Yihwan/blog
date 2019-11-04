@@ -24,9 +24,7 @@ const BlogIndex = ({ data }) => {
           <ExcerptText>
             <section dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
           </ExcerptText>
-          <ReadMore>
-            <Link to={edge.node.fields.slug.replace(/\/$/, "")}>—Read More—</Link>
-          </ReadMore>
+          <ReadMore to={edge.node.fields.slug.replace(/\/$/, "")}>Read More</ReadMore>
         </PostExcerpt>
     ));
 

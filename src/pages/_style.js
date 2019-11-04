@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Link } from 'gatsby';
 import { TYPOGRAPHY_STYLE, SPACER, MEDIA_QUERIES, COLORS } from 'src/styles/constants';
 
 // TODO: Clean-up p spacing, find a better selector for 'div'.
@@ -6,13 +7,13 @@ export const PostExcerpt = styled.article`
   margin: ${SPACER.large} 0;
   max-width: 700px;
 
-  p, blockquote {
-    margin-bottom: ${SPACER.base};
+  p:not(:last-of-type), blockquote {
+    margin-bottom: ${SPACER.large};
   }
 
   ${MEDIA_QUERIES.mdUp} {
-    p, blockquote {
-      margin-bottom: 20px;
+    p:not(:last-of-type), blockquote {
+      margin-bottom: ${SPACER.xlarge};
     }
   }
 
@@ -53,9 +54,15 @@ export const ExcerptText = styled.section`
   padding: ${SPACER.large} 0;
 `;
 
-export const ReadMore = styled.div`
-  ${TYPOGRAPHY_STYLE.body};
+export const ReadMore = styled(Link)`
+  ${TYPOGRAPHY_STYLE.caption};
   text-align: center;
+  display: block; 
+  width: 100px;
+  padding: ${SPACER.base} ${SPACER.large};
+  margin: ${SPACER.base} 0;
+
+  border: 1px solid ${COLORS.darkGrey};
 `;
 
 export const PostExcerptsIndexContainer = styled.section`
